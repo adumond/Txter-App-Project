@@ -1,9 +1,7 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const { Model, DataTypes } = require("sequelize");
+const sequelize = require("../config/connection");
 
 class User extends Model {}
-
-// TODO: Add validations to the User model
 
 User.init(
   {
@@ -18,7 +16,9 @@ User.init(
     },
     email: {
       type: DataTypes.STRING,
+      // prevents duplicate email addresses in DB
       unique: true,
+      // checks for email format (foo@bar.com)
       validate: {
         isEmail: true,
       },
@@ -32,7 +32,7 @@ User.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'user',
+    modelName: "user",
   }
 );
 
