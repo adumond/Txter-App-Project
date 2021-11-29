@@ -21,6 +21,9 @@
     "sequelize": "^6.3.5"
   },
   "devDependencies": {
-    "jest": "^26.4.2"
+    "autoprefixer": "^10.4.0",
+    "jest": "^26.4.2",
+    "postcss": "^8.4.4",
+    "tailwindcss": "^2.2.19"
   }
 }

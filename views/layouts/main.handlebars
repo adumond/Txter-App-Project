@@ -5,10 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
     <link rel="stylesheet" type="text/css" href="/css/cal.css" />
+    <link rel="stylesheet" type="text/css" href="/css/tailwind.css" />
     <title>Hello World</title>
   </head>
-  <body>
-    <nav>this is the nav</nav>
+  <body class="bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 ...">
+    <nav>
+      <ul class="flex">
+        <li class="flex-1 mr-2">
+          <a
+            class="text-center block border border-blue-500 rounded py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white"
+            href="/"
+          >Home</a>
+        </li>
+        <li class="flex-1 mr-2">
+          <a
+            class="text-center block border border-blue-500 rounded py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white"
+            href="/txter"
+          >Txter</a>
+        </li>
+        <li class="flex-1 mr-2">
+          <a
+            class="text-center block border border-blue-500 rounded py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white"
+            href="/contacts"
+          >Contacts</a>
+        </li>
+        <li class="flex-1 mr-2">
+          <a
+            class="text-center block border border-blue-500 rounded py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white"
+            href="/calendar"
+          >Calendar</a>
+        </li>
+        <li class="flex-1 mr-2">
+          <a
+            class="text-center block border border-blue-500 rounded py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white"
+            href="/history"
+          >History</a>
+        </li>
+      </ul>
+    </nav>
+
     {{{body}}}
 
   </body>
