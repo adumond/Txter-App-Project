@@ -5,11 +5,13 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test": "jest"
+    "test": "jest",
+    "seed": "node seeds/seed.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@vonage/server-sdk": "^2.10.10",
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.0.4",
     "dotenv": "^8.2.0",

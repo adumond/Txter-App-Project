@@ -1,13 +1,16 @@
-<h1>This is the homepage</h1>
-<a
-  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-  href="/login"
->
-  Login
-</a>
-<a
-  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-  href="/signup"
->
-  Signup
-</a>
+<div id="homepage">
+  <h2 id="homeTitle">Welcome to txter</h2>
+  <h3 id="homeSubTitle">The user friendly app for sending out bulk text messages</h3>
+
+  {{#unless user}}
+
+    <div id="buttons">
+      <a class="LoginBtn" href="/login">
+        Login
+      </a>
+      <a class="signupBtn" href="/signup">
+        Signup
+      </a>
+    </div>
+  {{/unless}}
+</div>

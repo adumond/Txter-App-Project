@@ -1,50 +1,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="/css/cal.css" />
     <link rel="stylesheet" type="text/css" href="/css/tailwind.css" />
     <title>Hello World</title>
   </head>
-  <body class="bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 ...">
+  <body>
     <nav>
-      <ul class="flex">
-        <li class="flex-1 mr-2">
-          <a
-            class="text-center block border border-blue-500 rounded py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white"
-            href="/"
-          >Home</a>
+      <ul id="navButtons">
+        <li>
+          <a class="homeBtn" id="topBtn" href="/">Home</a>
         </li>
-        <li class="flex-1 mr-2">
-          <a
-            class="text-center block border border-blue-500 rounded py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white"
-            href="/txter"
-          >Txter</a>
+        <li>
+          <a class="txterBtn" id="topBtn" href="/txter">Txter</a>
         </li>
-        <li class="flex-1 mr-2">
-          <a
-            class="text-center block border border-blue-500 rounded py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white"
-            href="/contacts"
-          >Contacts</a>
+        <li>
+          <a class="contactsBtn" id="topBtn" href="/contacts">Contacts</a>
         </li>
-        <li class="flex-1 mr-2">
-          <a
-            class="text-center block border border-blue-500 rounded py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white"
-            href="/calendar"
-          >Calendar</a>
+        <li>
+          <a class="historyBtn" id="topBtn" href="/history">History</a>
         </li>
-        <li class="flex-1 mr-2">
-          <a
-            class="text-center block border border-blue-500 rounded py-2 px-4 bg-blue-500 hover:bg-blue-700 text-white"
-            href="/history"
-          >History</a>
-        </li>
+
       </ul>
+      {{#if logged_in}}
+
+        <button class="btn" id="logout">logout</button>
+        <script src="/js/logout.js"></script>
+
+      {{/if}}
     </nav>
 
     {{{body}}}
 
   </body>
+
 </html>
